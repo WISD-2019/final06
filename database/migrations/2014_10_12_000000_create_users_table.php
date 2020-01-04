@@ -19,6 +19,7 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->string('type');//使用者類別:會員&影城管理人員
             $table->rememberToken();
             $table->timestamps();
         });

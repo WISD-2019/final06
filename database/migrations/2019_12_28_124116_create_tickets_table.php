@@ -14,8 +14,12 @@ class CreateTicketsTable extends Migration
     public function up()
     {
         Schema::create('tickets', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->bigIncrements('id');//電影票編號
             $table->timestamps();
+            $table->integer('x');//x排
+            $table->integer('y');//y位
+            $table->integer('order_id');//預定編號
+            $table->integer('section');//放映編號
         });
     }
 
