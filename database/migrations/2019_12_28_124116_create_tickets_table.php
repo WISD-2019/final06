@@ -19,7 +19,8 @@ class CreateTicketsTable extends Migration
             $table->integer('x');//x排
             $table->integer('y');//y位
             $table->integer('order_id');//預定編號
-            $table->integer('section');//放映編號
+            $table->integer('section_id');//放映編號
+            $table->integer('movie_id');//電影編號
         });
     }
 

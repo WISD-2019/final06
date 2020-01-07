@@ -12,7 +12,8 @@ class Ticket extends Model
         'x',
         'y',
         'order_id',
-        'section',
+        'section_id',
+        'movie_id'
     ];
 
 
@@ -24,5 +25,9 @@ class Ticket extends Model
     }
     public function Book_a_Seat(){
         return $this->hasMany(Section::class,'section_id');
+    }
+    public function Movie()
+    {
+        return $this->belongsTo(Movie::class);
     }
 }

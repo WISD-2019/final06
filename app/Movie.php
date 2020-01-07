@@ -24,4 +24,8 @@ class Movie extends Model
     {
         return $this->hasMany(Order::class);
     }
+    public function Ticket()
+    {
+        return $this->hasMany(Ticket::class);
+    }
 }
