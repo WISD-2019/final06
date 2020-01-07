@@ -12,9 +12,9 @@
         <!-- Styles -->
         <style>
             html, body {
-                background-color: #3030FF;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
+                background-color: #FFEBCD;
+                color: #000000;
+                font-family: '微軟正黑體', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
                 font-weight: 200;
                 height: 100vh;
                 margin: 0;
@@ -35,8 +35,8 @@
             }
 
             .top-right {
-                position: absolute;
-                right: 500px;
+                position: relative;
+                right: inherit;
                 top: 200px;
             }
 
@@ -49,9 +49,9 @@
             }
 
             .links > a {
-                color: #636b6f;
+                color: #000080;
                 padding: 0 25px;
-                font-size: 13px;
+                font-size: 20px;
                 font-weight: 600;
                 letter-spacing: .1rem;
                 text-decoration: none;
@@ -59,7 +59,7 @@
             }
 
             .m-b-md {
-                margin-bottom: 30px;
+                margin-bottom: 10px;
             }
         </style>
     </head>
