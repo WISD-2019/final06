@@ -57,7 +57,7 @@
                         0
                 </div>
                 <div style="font-family: '微軟正黑體' ">
-                <td align="left" ><a href="" role="btn" class="btn-total" > 確認 </a></td>
+                    <h3><td align="center" ><a href="" role="btn" class="btn-total" > 確認 </a></td></h3>
                 </div>
             </div>
         </div>
