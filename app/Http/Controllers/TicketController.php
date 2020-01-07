@@ -15,6 +15,12 @@ class TicketController extends Controller
     public function index()
     {
         //
+        $ticket = Ticket::all();
+        //dd($ticket);
+
+        return view('ticket',[
+            'ticket' => $ticket
+        ]);
     }
 
     /**
@@ -81,5 +87,6 @@ class TicketController extends Controller
     public function destroy(Ticket $ticket)
     {
         //
+
     }
 }

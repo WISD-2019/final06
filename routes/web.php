@@ -24,7 +24,14 @@ Route::get('/movie', 'MovieController@index')->name('movie');
 
 //訂票
 Route::get('/order', 'OrderController@index')->name('order');
+//查詢訂票
+Route::get('/ticket', 'TicketController@index')->name('ticket');
+//刪除任務
+Route::delete('/ticket/{ticket}', function (\App\Ticket $ticket) {
+    $ticket->delete();
 
+    return redirect('/');
+});
 
 
 

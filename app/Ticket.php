@@ -6,6 +6,16 @@ use Illuminate\Database\Eloquent\Model;
 
 class Ticket extends Model
 {
+    protected $fillable = [
+        'id',
+        'name',
+        'x',
+        'y',
+        'order_id',
+        'section',
+    ];
+
+
     public function Order(){
         return $this->belongsTo(Order::class);
     }

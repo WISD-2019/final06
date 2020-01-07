@@ -81,6 +81,7 @@
 
                                 <a href="{{ route('movie') }}">上映電影</a>
                                 <a href="{{ url('cheaper') }}">優惠資訊</a>
+                                <a href="{{ route('ticket') }}">查詢訂票</a>
                                 <a href="{{ url('QA') }}">常見問題</a>
                             </div>
                     @else
