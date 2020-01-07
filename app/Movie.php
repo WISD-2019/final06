@@ -20,4 +20,8 @@ class Movie extends Model
     public function Room(){
         return $this->belongsTo(Room::class);
     }
+    public function Order()
+    {
+        return $this->hasMany(Order::class);
+    }
 }
