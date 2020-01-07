@@ -1,3 +1,4 @@
+<div style="font-family: '微軟正黑體'" ><h2><a href="http://localhost:8000/" target="_parent">返回首頁 </a></h2>
 @foreach ($movie as $movie)
     <body bgcolor="#E6E6FA">
     <div style="font-family: '微軟正黑體' ">

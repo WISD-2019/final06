@@ -33,7 +33,7 @@ Route::get('cheaper',function(){
     return'
 <body bgcolor="#FFF68F">
 <div style="font-family: \'微軟正黑體\' ">
-<h2><a href="http://localhost:8000/" target="_parent">返回 </a></h2>
+<h2><a href="http://localhost:8000/" target="_parent">返回首頁 </a></h2>
 <br>
 
 <h1>優惠資訊</h1>
@@ -55,9 +55,9 @@ Route::get('cheaper',function(){
 //常見問題
 Route::get('QA',function(){
     return'
-<body bgcolor="#FFF68F">
+<body bgcolor="#C1FFC1">
 <div style="font-family: \'微軟正黑體\' ">
-<h2><a href="http://localhost:8000/" target="_parent">返回</a></h2>
+<h2><a href="http://localhost:8000/" target="_parent">返回首頁</a></h2>
 <br>
 <h1>常見問題</h1>
 <div style="WIDTH: 800px; text-align: left">
@@ -76,6 +76,15 @@ Route::get('QA',function(){
     ';
 });
 
-
+//訂票成功
+Route::get('OrderSuccess',function(){
+    return'
+<body bgcolor="#FAFAD2">
+<br><br><br><br>
+<div style="font-family: \'微軟正黑體\' ;text-align:center"><h1>訂票成功!</h1>
+<div style="font-family: \'微軟正黑體\' ;text-align:center"><h2><a href="http://localhost:8000/" target="_parent">返回首頁</a></h2>
+ </div>
+    ';
+});
 
 
