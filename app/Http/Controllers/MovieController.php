@@ -14,7 +14,12 @@ class MovieController extends Controller
      */
     public function index()
     {
-        //
+        $movie = Movie::all();
+        //dd($movie);
+
+        return view('movie',[
+            'movie' => $movie
+        ]);
     }
 
     /**
@@ -70,6 +75,9 @@ class MovieController extends Controller
     public function update(Request $request, Movie $movie)
     {
         //
+        $movie = Movie::creat($request->all());
+
+        return view('movie');
     }
 
     /**
