@@ -22,7 +22,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 //電影資訊
 Route::get('/movie', 'MovieController@index')->name('movie');
 
-
+//訂票
+Route::get('/order', 'OrderController@index')->name('order');
 
 
 

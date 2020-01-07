@@ -70,7 +70,7 @@
                 <div class="top-right links">
                     @auth
 
-                        <a href="{{ url('/home') }}">訂票</a>
+                        <a href="{{ url('/order') }}">訂票</a>
                         <div class="content">
 
                             <div class="title m-b-md">
