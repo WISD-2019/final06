@@ -12,7 +12,7 @@
         <!-- Styles -->
         <style>
             html, body {
-                background-color: #fff;
+                background-color: #3030FF;
                 color: #636b6f;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
@@ -36,8 +36,8 @@
 
             .top-right {
                 position: absolute;
-                right: 10px;
-                top: 18px;
+                right: 500px;
+                top: 200px;
             }
 
             .content {
@@ -64,35 +64,44 @@
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
+        <div class=out1 style='text-align:center; line-height:100px'>
+            <span>
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a href="{{ url('/home') }}">Home</a>
+
+                        <a href="{{ url('/home') }}">訂票</a>
+                        <div class="content">
+
+                            <div class="title m-b-md">
+                                會員專區
+                            </div>
+
+                            <div class="links">
+                                <a href="{{ route('movie') }}">上映電影</a>
+                                <a href="{{ url('cheaper') }}">優惠資訊</a>
+                            </div>
                     @else
                         <a href="{{ route('login') }}">Login</a>
 
                         @if (Route::has('register'))
                             <a href="{{ route('register') }}">Register</a>
                         @endif
+                        <div class="content">
+
+                            <div class="title m-b-md">
+                                電影訂票系統
+                            </div>
+
+                            <div class="links">
+                                <a href="{{ route('movie') }}">上映電影</a>
+                                <a href="{{ url('QA') }}">常見問題</a>
+                            </div>
                     @endauth
+
                 </div>
             @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
+            </span>
             </div>
         </div>
     </body>
