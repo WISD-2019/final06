@@ -78,6 +78,7 @@
                             </div>
 
                             <div class="links">
+
                                 <a href="{{ route('movie') }}">上映電影</a>
                                 <a href="{{ url('cheaper') }}">優惠資訊</a>
                             </div>
@@ -94,6 +95,7 @@
                             </div>
 
                             <div class="links">
+
                                 <a href="{{ route('movie') }}">上映電影</a>
                                 <a href="{{ url('QA') }}">常見問題</a>
                             </div>
