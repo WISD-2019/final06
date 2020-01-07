@@ -1,5 +1,5 @@
 @foreach ($ticket as $ticket)
-    <body bgcolor="#E6E6FA">
+    <body bgcolor="#F5DEB3">
     <div style="font-family: '微軟正黑體' ">
     <p> <h3 font-color="#000000">電影 :{{ $ticket->name}}</h3></p>
         <p>第{{ $ticket->x}}排{{ $ticket->y}}號</p>
